@@ -51,12 +51,16 @@ Creating and Using Branches in Git
             - to push changes to github: git push -u origin <branchname>
 
 Merging Branches in Git :
-way1: using PR(Pull Request) 
+way1: using github inbuilt feature
     - there will be an option "compare and pull request" in github repo, click on it and  select the branch you want to merge then finally click on "create pull request"
     - then in vscode type command : git pull origin <branchname> (or) git pull origin 
     
-way2:      
-
+way2: using git commands in vscode     
+    - Make sure you're on the  branch before merging: git checkout <branchname>
+    - Use the  command to merge the branch (e.g., ) into : git merge <branchname>
+    - Finally, don't forget to push the merged changes to the remote repository: git push origin main
+    
 *Note: 
     - we can merge branches only if we are in master branch
     - pull: fetches the changes from remote repo and merges them into local repo*
+
