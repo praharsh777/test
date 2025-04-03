@@ -1,22 +1,41 @@
 
 To setup your git in gitbash , you can use the following commands:
 
-git config--global user.name "xyz"
-git config--global user.email "user@.gmail.com"
-git config --list
+-git config--global user.name "xyz"
+-git config--global user.email "user@.gmail.com"
+-git config --list
 
 Important commands needed to know :
 
-to clone a repositoryin vscode : git clone <repository https link>
-to clear everything in terminal or gitbash : clear
-to list all files : ls
-to also see hidden files along with all files : Get-ChildItem -Force
-to also see only hidden files : Get-ChildItem -Hidden
-to get status of project(for to see if any changes made in repository ) : git status
+-to clone a repositoryin vscode : git clone <repository https link>
+-to clear everything in terminal or gitbash : clear
+-to list all files : ls
+-to also see hidden files along with all files : Get-ChildItem -Force
+-to also see only hidden files : Get-ChildItem -Hidden
+-to get status of project(for to see if any changes made in repository ) : git status
                - there are 4 types in status :
                         -Untracked : new files git is not keeping track off 
                         -Modified  : changed files
                         -Staged    : file ready to be commited 
                         -Unstaged  : files not ready to be commited
+                        
+Note : *we first add the files in staging area we use git add command then commit them using git commit command*
 
+-to add file  to staging area before commiting : git add <filename> 
+-to add all files to staging area before commiting : git add .
+-to commit the files : git commit -m "message"
+-to upload local repo content to remote repo (local:laptop,remote:github): git push -u origin main
+            - git push -u origin(origin is repo) <branchname>
 
+-to add an repo from vscode to git follow the steps:
+            - go to that path new repo wanted to add and type : git init
+            - then type command : Get-Children -Force 
+            - then add them : git add .
+            - then check status for confirmation: git status 
+            - then commmit them: git commit -m "message"
+            - then use command: git remote add origin <link of the created repo in github(ex:lo cal_repo)here "remote" means repository>           
+            - to verify : git remote -v 
+            -to know in which branch we are : git branch
+                        -master means default branch      
+            -to rename a branch : git branch -M <new name>
+            -to push the changes to remote repo : git push -u origin <branchname>  (or) we can also do command: git push
