@@ -56,7 +56,7 @@ way1: using github inbuilt feature
     - then in vscode type command : git pull origin <branchname> (or) git pull origin 
     
 way2: using git commands in vscode     
-    - Make sure you're on the  branch before merging: git checkout <branchname>
+    - Make sure you're on the main branch before merging: git checkout <branchname>
     - Use the  command to merge the branch (e.g., ) into : git merge <branchname>
     - Finally, don't forget to push the merged changes to the remote repository: git push origin main
     
