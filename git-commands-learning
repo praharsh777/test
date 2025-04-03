@@ -39,3 +39,23 @@ Note : *we first add the files in staging area we use git add command then commi
                         -master means default branch      
             -to rename a branch : git branch -M <new name>
             -to push the changes to remote repo : git push -u origin <branchname>  (or) we can also do command: git push
+
+
+*Note : To add new features in ut prjoject we create branches*
+
+Creating and Using Branches in Git 
+            - to create a branch: git checkout -b <branchname> 
+            - to change to another branch : git checkout <branchname> 
+            - to check in which branch we are in currently : git branch
+            - to delete a branch : git branch -d <branchname>
+            - to push changes to github: git push -u origin <branchname>
+
+Merging Branches in Git :
+way1: using PR(Pull Request) 
+    - there will be an option "compare and pull request" in github repo, click on it and  select the branch you want to merge then finally click on "create pull request"
+    - then in vscode type command : git pull origin <branchname> (or) git pull origin 
+    
+way2:      
+*Note: 
+    - we can merge branches only if we are in master branch
+    - pull: fetches the changes from remote repo and merges them into local repo
