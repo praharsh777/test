@@ -67,5 +67,9 @@ way2: using git commands in vscode
 pull request :
     - to fetches changes from remote repo to local repo: git pull origin <branchname>
 
-Conflcts : if you are having different changes in two branches conflit arises because git doesn't know which one to take
+-to check differences between a beanch and main branch: git diff <branchname> main
+
+Conflicts : if you are having different changes in two branches conflit arises because git doesn't know which one to take
+
+
           
