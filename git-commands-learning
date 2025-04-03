@@ -64,3 +64,5 @@ way2: using git commands in vscode
     - we can merge branches only if we are in master branch
     - pull: fetches the changes from remote repo and merges them into local repo*
 
+pull request :
+    - to fetches changes from remote repo to local repo: git pull origin <branchname>
