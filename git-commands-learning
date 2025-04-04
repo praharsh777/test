@@ -83,4 +83,14 @@ Undoing Changes in Git:
         command : git reset --hard <hash of the commit>       
                           
 -to check all commits done : git log          
-          
+
+Fork: 
+   - A new repo  in youbr github , for ex: if you want to make changes in some other repo then you can fork that repo in your github account and make changes in your repo and then you can send pull request to the original repo owner .(quite useful while doing open source contributions)
+   process through github:
+       - go to the repo you want to fork
+       - click on fork button and give a name there
+       - then you can make changes in your repo and send pull request to the original repo owner
+       - original repo owner can accept or reject your pull request
+       - if accepted then your changes will be merged in the original repo and you will get a notification in your email
+       - you can make thee changes from vcode to that forked repo by cloning it in vscode and then making changes in vscode and then pushing it to your forked repo in github.
+       
