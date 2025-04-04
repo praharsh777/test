@@ -75,7 +75,12 @@ Undoing Changes in Git:
   
   1.staged changes : cheanges which are made like you added(add .) but not commited yet 
         command: git reset  or git reset <filename> 
-  2.commited chnages : to undo the change if you already commited it .
+  2.commited chnages  : to undo the one commited change .
         command: git reset HEAD~1
-                           
+  3.cmmited changes   : to undo the commit as user desired , i.e if user wanted to go to commit n to commit n-3 or many commits back. every commit has unique hash id .
+        command: git reset <hash of the commit>      
+  4.commited changes and also to make changes n vscode code : to also get changes in code as commits a re being undo .
+        command : git reset --hard <hash of the commit>       
+                          
+-to check all commits done : git log          
           
